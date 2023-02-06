@@ -1,0 +1,121 @@
+
+/*
+ Problem 1: Let’s play a mind game
+ */
+
+// function mindGame(number) {
+//     if (typeof number == "string" || number < 0) {
+//         let errorMindGame= 'inter your number';
+//         return errorMindGame;
+//     }
+//     let numberOparaction = (number * 3 + 10) / 2 - 5;
+//     return numberOparaction;
+// }
+// let totalNumber = mindGame(60);
+// console.log(totalNumber);
+
+
+/*
+ Problem 2: Finding even or odd 
+ */
+
+
+// function evenOdd(defindString){
+//     if (typeof defindString == "number") {
+//                 let errorEvenOdd = 'inter your string';
+//                 return errorEvenOdd;
+//             }
+
+//      if(defindString.length % 2==0){
+//        let countEvenNumber = "even";
+//        return countEvenNumber; 
+//      }else{
+//         let countOddNumber = "odd";
+//         return countOddNumber;
+//      } 
+//     } 
+//     const findingString = 'wer';
+// const eventOddResult = evenOdd(findingString);
+// console.log(eventOddResult); 
+
+
+/* 
+Problem 3: Is Less or Greater than seven 
+ */
+
+// function isLGSeven(defindLgSeven) {
+//     if (typeof defindLgSeven == "string") {
+//                         let errorLgSeven = 'inter your number';
+//                         return errorLgSeven;
+//                     }
+
+//     let LgSeven = defindLgSeven - 7;
+//     if (LgSeven >= 7) {
+//         let LgSevenValue = LgSeven * 2;
+//         return LgSevenValue;
+//     } else {
+//         return LgSeven;
+//     }
+// }
+// let findingLgSeven = -15;
+// const isLGSevenResult = isLGSeven(findingLgSeven);
+// console.log(isLGSevenResult); 
+
+
+
+/* 
+Problem 4: Finding Bad data
+ */
+    // function findingBadData(definDingData){
+
+    // if (typeof definDingData == "string") {
+    //     let errorDingData = 'inter your number';
+    //     return errorDingData;
+    // }
+    //         let badData = 0; 
+    //        for(let i = 0; i < definDingData.length; i++){
+    //            let index = i;
+    //            let element = definDingData[index];
+    //            if(element < 0){
+    //                badData= badData+1;
+    //            }
+    //        }
+    //        return badData;
+    //    }
+    //    let findingData= [2023, -2024, -2025, -2028, -2030]
+    //    let totalBadData =findingBadData(findingData);
+    //    console.log( totalBadData);
+
+
+
+     /* 
+     Problem 5: Convert your gems into diamond
+       */
+     
+
+      function gemsToDiamondsan(friend1, friend2, friend3) {
+
+
+        if (typeof friend1 == "string" ||typeof friend2 == "string" ||typeof friend3 == "string") {
+            let errorDingData = 'inter your number';
+            return errorDingData;
+        }
+             let friend1Gems=friend1*21
+             let friend2Gems=friend2*32
+             let friend3Gems=friend3*43
+            let allfriendsGems = friend1Gems+friend2Gems+friend3Gems;
+            if(allfriendsGems > 1000*2){
+                let friendsExtraGems =allfriendsGems-2000; 
+                return friendsExtraGems ;  
+            }else{
+                return allfriendsGems; 
+            }
+           }
+           let friend1= 20;
+           let friend2= 200;
+           let friend3= 50;
+           let totalDiamondsan =gemsToDiamondsan(friend1, friend2, friend3);
+            console.log( totalDiamondsan);
+
+
+
